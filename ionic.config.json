@@ -1,0 +1,7 @@
+{
+  "name": "Simplifid",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
