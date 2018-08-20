@@ -1,0 +1,48 @@
+<ion-navbar *navbar>
+  <ion-title>
+    Ionic 2
+  </ion-title>
+</ion-navbar>
+
+<ion-content class="has-header textcolor">
+  <ion-slides pager class="holder">
+ 
+      <ion-slide >
+          <h1> Welcome to SimpiFid</h1>
+          <img src="./assets/imgs/ic_logo.png"> 
+
+          <!-- <video controls  width="320" height="250">
+              <source src="./assets/videos/intro_video.mp4" type="video/mp4" > </video> -->
+    
+          <h3 > SimpliFid charges a flat monthly fee of $1, with no hidden charges. Open an account and start investing.</h3>
+
+          <button class="btn-skip" (click)="goToLogin()">Skip</button>
+
+        </ion-slide>
+    
+    <ion-slide >
+        <h1> Money to Invest</h1>
+        <img src="./assets/imgs/ic_contribution.png">
+  
+        <h3> Investment is done to generate more money, but do not invest all your emergency funds in the stock market.</h3>
+        <button class="btn-skip" (click)="goToLogin()">Skip</button>
+      </ion-slide>
+
+    <ion-slide>
+        <h1> Any Time, Any Where</h1>
+        <img src="./assets/imgs/ic_time2.png">
+        
+        <h3> User can view the real time market data and their portfolio on anytime anywhere using this app</h3>
+        <button class="btn-skip" (click)="goToLogin();">Skip</button>
+    </ion-slide>
+      
+    <ion-slide>
+        <h1>Money Transfer</h1>
+        <img src="./assets/imgs/ic_wallet.png">
+  
+        <h3> Investment is done to generate more money, but do not invest all your emergency funds in the stock market.</h3>
+        <button class="btn-skip" (click)="goToLogin()">Got It</button>
+      </ion-slide>
+
+  </ion-slides>
+  </ion-content>

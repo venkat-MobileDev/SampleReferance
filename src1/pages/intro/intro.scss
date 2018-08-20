@@ -1,0 +1,59 @@
+page-intro {
+
+    .textcolor {
+       color: white;
+    }
+
+    .swiper-pagination-bullet {
+        background: white;
+        opacity: 0.5;
+      }
+    
+      .swiper-pagination-bullet-active {
+        opacity: 1;
+        background: white;
+      }
+
+      .holder {
+        display: inline;
+    }
+    
+    /* resize images */
+    .holder img {
+      height: 50%;
+      width: 50%;
+      object-fit: cover;
+    }
+
+    .holder h1 {
+        font-size: 9vw;
+        text-align: center;
+        margin-bottom: 20%;
+        font-family: Ormont_Light !important;
+    }
+
+    .holder h3 {
+        font-size: 5.5vw;
+        margin-top: 20%;
+        line-height: 1.6;
+        padding: 5% 8%;
+        font-family: Ormont_Light !important;
+    }
+
+    .btn-skip {
+        font-size: 5vw;
+        color: white;
+        background-color: Transparent;
+        float: right;
+        position: absolute;
+        bottom: 2%;
+        right: 1%;
+    }
+
+    @font-face {
+        font-family: Ormont_Light;
+        src: url(../assets/fonts/Ormont_Light.ttf) format("ttf");
+        font-weight: 200
+        }
+
+}

@@ -1,0 +1,66 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-toolbar class="height-50">
+        <ion-navbar hideBackButton>
+            <ion-title class="login-title">Login into SimpliFid Profile</ion-title>
+        </ion-navbar>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-row class="height-50">
+        <ion-col>
+            <ion-label style="margin-top: 15%;" class="login-label">Login with any existing profiles</ion-label>
+
+            <ion-row style="margin-top: 10%">
+                <ion-col col-4>
+                    <img class="icon-social-network" src="./assets/imgs/ic_fb1.png">
+                </ion-col>
+
+                <ion-col col-4>
+                    <img class="icon-social-network" src="./assets/imgs/ic_gp1.png">
+                </ion-col>
+
+                <ion-col col-4>
+                    <img class="icon-social-network" src="./assets/imgs/ic_twitter1.png">
+                </ion-col>
+
+                <ion-label style="margin-top: 12%;" class="login-label">or Login with Email</ion-label>
+
+            </ion-row>
+        </ion-col>
+    </ion-row>
+
+    <ion-row class="height-50" style="margin-left: 5%; margin-right: 5%; margin-top: 10%">
+        <ion-col>
+            <ion-list>
+                <ion-item>
+                    <ion-input no-margin class="login-input" type="email" placeholder="Email"></ion-input>
+                </ion-item>
+
+                <ion-item style="margin-top: 5%">
+                    <ion-input no-margin class="login-input" type="password" placeholder="Password"></ion-input>
+                </ion-item>
+            </ion-list>
+        </ion-col>
+    </ion-row>
+</ion-content>
+
+<ion-footer class="login-footer">
+    <ion-row no-padding no-margin>
+        <ion-col col-6 no-padding>
+            <button ion-button full class="login-footer-btn" (click)="goToSignUp()">SIGN UP
+            </button>
+        </ion-col>
+        <ion-col col-6 no-padding>
+            <button ion-button full class="login-footer-btn">CONTINUE</button>
+        </ion-col>
+    </ion-row>
+
+</ion-footer>

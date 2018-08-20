@@ -1,0 +1,73 @@
+page-login {
+
+    .btn-footer {
+        font-size: 5vw;
+        color: white;
+        background-color: Transparent;
+        text-transform: uppercase;
+    }
+    .text-center {
+        text-align: center;
+    }
+
+    .vl {
+        border-left: 1px solid green;
+        height: 50px;
+    }
+
+    img {
+        height: 90% !important;
+        width: 65% !important;
+      }
+
+      img:hover {
+        transform: scale(1.1);
+      }
+
+      .input-cover { 
+          position: static !important;
+        }
+
+        .login-title {
+            text-align: center;
+            font-family: Ormont_Light !important;
+        }
+
+        .height-50 {
+            height: 50%;
+        }
+
+        .login-label {
+            text-align: center; 
+            color: white;
+            font-family: Ormont_Light !important; 
+            font-size: 6vw;
+        }
+
+        .icon-social-network {
+            display: block;
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        .login-input {
+            padding: 2% 3%; 
+            font-size: 5.5vw; 
+            color: black;
+        }
+
+        .login-footer {
+            height: 50px;
+            font-family: Ormont_Light !important;
+            background-color:  rgb(34, 128, 127);
+        }
+
+        .login-footer-btn {
+            letter-spacing: 2px;
+            background-color: Transparent;
+            box-shadow: none !important;
+            outline: none !important;
+            margin-top: 6px;
+        }
+        
+}
