@@ -1,0 +1,40 @@
+<ion-header>
+
+  <ion-toolbar>
+     <ion-buttons *ngIf=false>
+        
+        <ion-badge item-right [color]="startBtnClass(connected)">{{connectedLabel(connected)}}</ion-badge>    
+        <ion-badge item-right (click)="changeTriggerMode($event)" [color]="triggerColor()">{{triggerName(true)}}</ion-badge> 
+
+      </ion-buttons>
+  </ion-toolbar>  
+</ion-header>
+<ion-content padding>
+<ion-toolbar *ngIf=false>
+  <ion-buttons >
+    <button ion-button item-end icon-left color="danger" (click)="removeItems()"><ion-icon name="trash"></ion-icon>Remove All</button>        
+  </ion-buttons>
+</ion-toolbar>
+  <ion-list *ngIf=false> 
+    <ion-item-sliding *ngFor="let item of list_data; let i = index"> 
+      <ion-item (click)="viewData(item)"> <ion-thumbnail item-start>
+        <img [hidden]="!loaded" (load)="loaded = true" [src]="_DomSanitizer.bypassSecurityTrustUrl(showThumb(item.image))"/>
+
+      </ion-thumbnail>{{item.readString}} <button ion-button clear item-end>View</button></ion-item>
+      <ion-item-options>
+        <button icon-only color="danger" (click)="removeItem(i)"><ion-icon name="trash"></ion-icon></button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+  </ion-list>
+
+<ion-fab bottom right>
+
+  <button ion-fab mini (click)="changeTriggerMode($event)" [color]="triggerColor()" *ngIf=false>
+  <ion-icon [name]="triggerName()" *ngIf=false></ion-icon></button>
+  <button ion-fab (click)="startStopScanner($event)" [color]="startBtnClass(connected)">
+  <ion-icon [name]="scannerActive" *ngIf=false></ion-icon> </button>
+</ion-fab>  
+
+
+</ion-content>
